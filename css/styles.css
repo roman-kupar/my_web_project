@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+ background: #343536;
+ font-size: 22px;
+ color: #fff;
+}
+a {
+ color: #fff;
+}
+.name {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 70px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav{
+  margin: 0;
+  position:fixed;
+  justify-content: space-between;
+  width:1400px;
+  height:50px;
+  z-index:2;
+  background-color:#2b2c2d;
+  border-radius:8px;
+  font-size:0;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size:15px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align:center;
+  color:white;
+  cursor:pointer;
+}
+
+a:nth-child(1){
+  width:220px;
+}
+a:nth-child(2){
+  width:220px;
+}
+a:nth-child(3){
+  width:240px;
+}
+a:nth-child(4){
+  width:260px;
+}
+a:nth-child(5){
+  width:320px;
+}
+nav .animation {
+  position:absolute;
+  height:100%;
+  top:0;
+  z-index:0;
+  transition:all .4s ease 0s;
+  border-radius:8px;
+}
+/* Стилі блоку анімації при наведені на кнопку */
+a:nth-child(1):hover~.animation {
+  width:220px ;
+  left:0;
+  background-color: rgb(90, 90, 106);
+}
+a:nth-child(2):hover~.animation {
+  width:220px;
+  left:220px;
+  background-color:#242020;
+}
+a:nth-child(3):hover~.animation{
+  width:240px;
+  left:440px;
+  background-color: rgb(90, 90, 106);
+}
+a:nth-child(4):hover~.animation{
+  width:260px;
+  left:680px;
+  background-color: #242020;
+}
+a:nth-child(5):hover~.animation{
+  width:320px;
+  left:940px;
+  background-color: rgb(90, 90, 106);
+}
+
+.main-img{
+  max-width: 100%;
+  max-height: auto;
+}
+p{
+  padding: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+  margin: 20px;
+}
+h3{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+.moves{
+  display: flex;
+  justify-content: space-between;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* float: left; */
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.gifs{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.img{
+  border-radius: 10px;
+}
+.column {
+  flex: 50%;
+  padding: 0 4px;
+  
+}
+
+.column img {
+  margin-top: 12px;
+  vertical-align: middle;
+}
+.card-container{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.card-container-2{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  float:right;
+}
+.card {
+  border-radius: 8px;
+  margin-right: 90px;
+  width:30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card-2 {
+  border-radius: 8px;
+  margin-left: 20px;
+  width:30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card p{
+  padding: 0px;
+  margin-left: 0;
+}
+.card-2 p{
+  padding: 0px;
+  margin-left: 0;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+footer{
+  color:#c0c9d3;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 10px;
+}
+.background{
+  background-image:url("../images/Chess-king.jpg") ;
+  
+}
