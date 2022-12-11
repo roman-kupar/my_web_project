@@ -200,6 +200,7 @@ footer{
   text-align: center;
   font-size: large;
   margin-bottom: 10px;
+  display:grid;
 }
 .background{
   background-image:url("../images/Chess-king.jpg") ;
