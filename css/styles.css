@@ -22,10 +22,11 @@ a {
   -webkit-text-fill-color: transparent;
 }
 nav{
+  text-align: center;
   margin: 0;
   position:fixed;
   justify-content: space-between;
-  width:1400px;
+  width:100%;
   height:50px;
   z-index:2;
   background-color:#2b2c2d;
@@ -44,8 +45,12 @@ nav a {
   text-align:center;
   color:white;
   cursor:pointer;
+  transition: all .4s ease 0s;
+  border-radius:8px
 }
-
+nav a:hover {
+  background-color: rgb(90, 90, 106);
+}
 a:nth-child(1){
   width:220px;
 }
